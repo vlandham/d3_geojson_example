@@ -10,6 +10,9 @@ Also, this example has been reworked with a JavaScript only version in @js/vis.j
 
 Pick your poison!
 
+!http://vallandingham.me/images/gis/kc_tracts_small.png!
+
+
 h2. Running
 
 You can start up a local webserver by using python's simple server:
