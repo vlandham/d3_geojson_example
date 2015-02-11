@@ -1,0 +1,55 @@
+h1. A really quick example of getting geoJSON to display using D3
+
+This repo is part of the "From Shapefile to geoJSON":http://vallandingham.me/shapefile_to_geojson.html post. 
+
+h2. About
+
+Check out @coffee/vis.coffee@ for the implementation.
+
+Also, this example has been reworked with a JavaScript only version in @js/vis.js@.
+
+Pick your poison!
+
+h2. Running
+
+You can start up a local webserver by using python's simple server:
+
+<pre>
+python -m SimpleHTTPServer 3000
+</pre>
+
+
+or @thin@ in ruby
+
+<pre>
+thin start
+# might have to run 'bundle install' first
+</pre>
+
+Now go to "http://0.0.0.0:3000":http://0.0.0.0:3000/
+
+and you have a basic visualization
+
+OR - I've been using node's http-server as of late, which works just as well.
+
+You need to have it installed:
+
+<pre>
+npm install -g http-server
+</pre>
+
+Then you just run http-server in the root directory of your site:
+
+<pre>
+http-server ./
+</pre>
+
+Now go to "http://0.0.0.0:8080":http://0.0.0.0:8080/
+
+h2. Inspiration
+
+As detailed in the "post":http://vallandingham.me/shapefile_to_geojson.html, most of this code comes from "Bostock's Choropleth Example":http://bl.ocks.org/mbostock/4060606 . 
+
+Automatically figuring out the boundaries and scale of the projection comes from "another Bostock example":http://bl.ocks.org/mbostock/4707858 .
+
+
